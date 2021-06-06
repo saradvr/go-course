@@ -17,6 +17,16 @@ func main() {
 
 	fmt.Println(base, altura, area)
 
+	// var nombre string
+	// var apellido string
+	// var pais string
+
+	// var nombre, apellido, pais string
+	// var nombre, apellido, pais = "Eduardo", "Garcia", "México"
+	nombre, apellido, pais := "Eduardo", "Garcia", "México"
+
+	fmt.Println(nombre, apellido, pais)
+
 	// Zero values
 	var a int
 	var b float64
