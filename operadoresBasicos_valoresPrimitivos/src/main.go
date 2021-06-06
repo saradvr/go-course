@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+
 	// Declaración de constantes
 	const pi float64 = 3.14
 	const pi2 = 3.1415
@@ -60,4 +61,11 @@ func main() {
 	x--
 	fmt.Println("Decremental: ", x)
 
+	// Valores primitivos
+	// int (enteros)
+	// uint (enteros positivos)
+	// float32 o float64 (decimales)
+	// string (texto, siempre con comillas dobles)
+	// bool (true o false)
+	// Complex64 o Complex128 (números con parte real e imaginaria, c := 10 + 8i)
 }
