@@ -50,4 +50,17 @@ func main() {
 
 	// BREAK - CONTINUE
 
+	for i := 1; i <= 10; i++ {
+
+		if i == 5 {
+			continue // finaliza la iteración actual para pasar a la siguiente, entonces no alcanza a imprimirse en consola
+		}
+
+		if i == 8 {
+			break // finaliza todo el ciclo for ahí
+		}
+
+		fmt.Println(i)
+	}
+
 }
