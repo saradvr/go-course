@@ -9,12 +9,45 @@ func main() {
 	// 	// Sentencias
 	// }
 
-	for i := 1; i <= 100; i++ {
+	// for i := 1; i <= 100; i++ {
 
-		if i%2 == 0 {
-			fmt.Println(i)
-		}
+	// 	if i%2 == 0 {
+	// 		fmt.Println(i)
+	// 	}
+
+	// }
+
+	// FOR COMO WHILE
+	numero := 123
+	contador := 0
+
+	for numero > 0 {
+
+		numero = numero / 10
+		contador++
 
 	}
+
+	fmt.Println("La cantidad de dígitos es:", contador)
+
+	// CICLO FOREACH
+	animales := [...]string{"Perro", "Gato", "Pez", "Vaca", "Cerdo"}
+
+	for indice := 0; indice < len(animales); indice++ {
+
+		elemento := animales[indice]
+		fmt.Println(elemento)
+
+	}
+
+	for indice, elemento := range animales {
+		fmt.Println("El índice es:", indice, "el valor es", elemento)
+	}
+
+	for _, elemento := range animales { // Si no quiero usar alguno de los dos debo poner _
+		fmt.Println("El valor es", elemento)
+	}
+
+	// BREAK - CONTINUE
 
 }
