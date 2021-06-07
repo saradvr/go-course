@@ -28,7 +28,7 @@ func main() {
 	//FORMA 3
 	var miFuncion customFunction
 	if miFuncion == nil {
-		miFuncion = factorial // Valor por defecto
+		miFuncion = factorial // Valor por defecto que debe cumplir con el tipo de función que declaré
 	}
 
 	resultado := miFuncion(3)
