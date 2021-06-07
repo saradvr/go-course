@@ -19,7 +19,7 @@ func main() {
 	// monedas := [...]string{0: "Peso Mexicano", 1: "Dólar", 2: "Euro"} //Queda en orden
 	monedas := [...]string{0: "Peso Mexicano", 2: "Dólar", 1: "Euro"} //Puedo cambiar el orden de los índices, si no pongo un índice le pone un string vacío. Si quiero varios indices vacíos, asigno un valor al último índice que quiero tener.
 
-	subMonedas := monedas[0:2]
+	subMonedas := monedas[0:2] // Esto es un slice
 
 	fmt.Println(monedas, subMonedas)
 }
