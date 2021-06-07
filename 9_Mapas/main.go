@@ -4,6 +4,8 @@ import "fmt"
 
 func main() {
 
+	// El mapa es una colección desordenada de elementos
+
 	dias := make(map[int]string) // Para el map, dentro del paréntesis el tipo de dato de la llave, y afuera el tipo del valor
 
 	dias[0] = "Domingo" // En este caso, como es un mapa, el valor entre paréntesis no es un índice sino una llave
@@ -32,5 +34,21 @@ func main() {
 	usuarios["Sara"] = []int{10, 10, 7, 9, 8}
 
 	fmt.Println(usuarios)
+
+	// ITERACIONES
+
+	users := map[int]string{} // Otra forma para crear mapas
+	users[1] = "Usuario 1"
+	users[2] = "Usuario 2"
+	users[3] = "Usuario 3"
+	users[4] = "Usuario 4"
+
+	for llave, valor := range users {
+		fmt.Println(llave, valor)
+	}
+
+	for id, username := range users { // pueden cambiarse los nombres de llave, valor
+		fmt.Println(id, username)
+	}
 
 }
